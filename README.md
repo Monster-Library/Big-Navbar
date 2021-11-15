@@ -75,6 +75,7 @@
 
 ## CSS
 
+<p>This is CSS codes if you want SCSS don't take this codes and go down</p>
 <details>
 <summary>CSS</summary>
 <p>
@@ -473,7 +474,7 @@ header nav .grandfather .main_list:hover .sub_parent {
 <p>This is JavaScript codes this codes is very important</p>
 
 <details>
-<summary>HTML</summary>
+<summary>JavaScript</summary>
 <p>
 
 ```js
