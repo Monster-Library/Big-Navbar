@@ -8,10 +8,11 @@ now you can put the data just one time
 
 ## The Links is
 
-`<link rel="stylesheet" href="SCSS/navbar.css" />
+```
+<link rel="stylesheet" href="SCSS/navbar.css" />
 <link rel="stylesheet" href="Font/style.css" />
-<script defer src="index.js"></script>`
-
+<script defer src="index.js"></script>
+```
 ## HTML
 `
 <header>
