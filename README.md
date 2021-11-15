@@ -3,15 +3,20 @@
 1. the html navbar compressed to just one navbar and you don't need to repeat your data in the navbar
 now you can put the data just one time
 2. JavaScript codes shrinks to just 20 code
+<br/>
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/F8VSyRn/ezgif-com-gif-maker.gif" alt="ezgif-com-gif-maker" border="0" /></a>
 
 ## The Links is
-`<link rel="stylesheet" href="SCSS/navbar.css" />
+
+`
+<link rel="stylesheet" href="SCSS/navbar.css" />
 <link rel="stylesheet" href="Font/style.css" />
-<script defer src="index.js"></script>`
+<script defer src="index.js"></script>
+`
 
 ## HTML
-`<header>
+`
+<header>
     <nav>
         <h1 class="logo"><a href="#">Monster Shop</a></h1>
         <span id="show_icon" class="icon-menu"></span>
@@ -55,4 +60,5 @@ now you can put the data just one time
             </li>
         </ul>
     </nav>
-</header>`
+</header>
+`
