@@ -14,7 +14,7 @@ now you can put the data just one time
 <script defer src="index.js"></script>
 ```
 ## HTML
-`
+```
 <header>
     <nav>
         <h1 class="logo"><a href="#">Monster Shop</a></h1>
@@ -60,4 +60,5 @@ now you can put the data just one time
         </ul>
     </nav>
 </header>
-`
+```
+
