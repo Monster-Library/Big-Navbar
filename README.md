@@ -18,6 +18,10 @@
 
 ## HTML
 
+<details>
+<summary>HTML</summary>
+<p>
+
 ```html
 <header>
   <nav>
@@ -66,13 +70,16 @@
 </header>
 ```
 
+</p>
+</details>
+
 ## CSS
 
 <details>
-<summary>CSS</summary>
+<summary>I could use some help...</summary>
 <p>
 
-````css
+```css
 @-webkit-keyframes appear_slow {
   0% {
     opacity: 0;
@@ -150,7 +157,9 @@ nav a {
   color: #fff;
 }
 
-.sub_list_items, header nav .grandfather .main_list .sub_parent .sub_main_list .sub_sub_parent, header nav .grandfather .main_list .sub_parent {
+.sub_list_items,
+header nav .grandfather .main_list .sub_parent .sub_main_list .sub_sub_parent,
+header nav .grandfather .main_list .sub_parent {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -161,13 +170,38 @@ nav a {
   border-top: 1px solid #00ffff;
   transition: 0.3s;
 }
-.sub_list_items li, header nav .grandfather .main_list .sub_parent .sub_main_list .sub_sub_parent li, header nav .grandfather .main_list .sub_parent li {
+.sub_list_items li,
+header
+  nav
+  .grandfather
+  .main_list
+  .sub_parent
+  .sub_main_list
+  .sub_sub_parent
+  li,
+header nav .grandfather .main_list .sub_parent li {
   padding: 15px 0;
   border-bottom: 1px solid #000;
 }
-.sub_list_items a:hover, header nav .grandfather .main_list .sub_parent .sub_main_list .sub_sub_parent a:hover, header nav .grandfather .main_list .sub_parent a:hover,
+.sub_list_items a:hover,
+header
+  nav
+  .grandfather
+  .main_list
+  .sub_parent
+  .sub_main_list
+  .sub_sub_parent
+  a:hover,
+header nav .grandfather .main_list .sub_parent a:hover,
 .sub_list_items span:hover,
-header nav .grandfather .main_list .sub_parent .sub_main_list .sub_sub_parent span:hover,
+header
+  nav
+  .grandfather
+  .main_list
+  .sub_parent
+  .sub_main_list
+  .sub_sub_parent
+  span:hover,
 header nav .grandfather .main_list .sub_parent span:hover {
   color: #00ffff;
   font-weight: bold;
@@ -204,7 +238,7 @@ header nav .grandfather .main_list .sub_parent {
   left: -30px;
   display: none;
   -webkit-animation: appear_slow 0.5s 1;
-          animation: appear_slow 0.5s 1;
+  animation: appear_slow 0.5s 1;
 }
 header nav .grandfather .main_list .sub_parent li {
   padding: 15px 0;
@@ -219,12 +253,26 @@ header nav .grandfather .main_list .sub_parent .sub_main_list {
   width: 160px;
   cursor: pointer;
 }
-header nav .grandfather .main_list .sub_parent .sub_main_list .sub_main_top .main_links {
+header
+  nav
+  .grandfather
+  .main_list
+  .sub_parent
+  .sub_main_list
+  .sub_main_top
+  .main_links {
   font-weight: unset;
   box-shadow: unset;
   padding: 0;
 }
-header nav .grandfather .main_list .sub_parent .sub_main_list .sub_main_top:hover .main_links {
+header
+  nav
+  .grandfather
+  .main_list
+  .sub_parent
+  .sub_main_list
+  .sub_main_top:hover
+  .main_links {
   color: #00ffff !important;
 }
 header nav .grandfather .main_list .sub_parent .sub_main_list .sub_sub_parent {
@@ -232,14 +280,35 @@ header nav .grandfather .main_list .sub_parent .sub_main_list .sub_sub_parent {
   top: 104px;
   display: none;
   -webkit-animation: appear_slow 0.5s 1;
-          animation: appear_slow 0.5s 1;
+  animation: appear_slow 0.5s 1;
 }
-header nav .grandfather .main_list .sub_parent .sub_main_list .sub_sub_parent li {
+header
+  nav
+  .grandfather
+  .main_list
+  .sub_parent
+  .sub_main_list
+  .sub_sub_parent
+  li {
   padding: 15px 0;
   border-bottom: 1px solid #000;
 }
-header nav .grandfather .main_list .sub_parent .sub_main_list .sub_sub_parent a:hover,
-header nav .grandfather .main_list .sub_parent .sub_main_list .sub_sub_parent span:hover {
+header
+  nav
+  .grandfather
+  .main_list
+  .sub_parent
+  .sub_main_list
+  .sub_sub_parent
+  a:hover,
+header
+  nav
+  .grandfather
+  .main_list
+  .sub_parent
+  .sub_main_list
+  .sub_sub_parent
+  span:hover {
   color: #00ffff;
   font-weight: bold;
 }
@@ -247,7 +316,13 @@ header nav .grandfather .main_list .sub_parent .sub_main_list:hover {
   color: #00ffff;
   font-weight: bold;
 }
-header nav .grandfather .main_list .sub_parent .sub_main_list:hover .sub_sub_parent {
+header
+  nav
+  .grandfather
+  .main_list
+  .sub_parent
+  .sub_main_list:hover
+  .sub_sub_parent {
   display: flex;
 }
 header nav .grandfather .main_list .last {
@@ -315,7 +390,7 @@ header nav .grandfather .main_list:hover .sub_parent {
     margin-left: 20px !important;
     display: none !important;
     -webkit-animation: move 0.5s 1 !important;
-            animation: move 0.5s 1 !important;
+    animation: move 0.5s 1 !important;
   }
   nav .grandfather .main_list .sub_parent li {
     border-bottom: unset !important;
@@ -338,7 +413,7 @@ header nav .grandfather .main_list:hover .sub_parent {
     flex-direction: column !important;
     display: none !important;
     -webkit-animation: move 0.5s 1 !important;
-            animation: move 0.5s 1 !important;
+    animation: move 0.5s 1 !important;
   }
   nav .grandfather .main_list .sub_parent .sub_main_list .sub_sub_parent a {
     padding-top: 25px !important;
@@ -350,12 +425,29 @@ header nav .grandfather .main_list:hover .sub_parent {
     color: unset !important;
     font-weight: unset !important;
   }
-  nav .grandfather .main_list .sub_parent .sub_main_list:hover .sub_main_top:hover {
+  nav
+    .grandfather
+    .main_list
+    .sub_parent
+    .sub_main_list:hover
+    .sub_main_top:hover {
     color: unset !important;
     font-weight: unset !important;
   }
-  nav .grandfather .main_list .sub_parent .sub_main_list:hover .sub_main_top:hover .icon,
-nav .grandfather .main_list .sub_parent .sub_main_list:hover .sub_main_top:hover .main_links {
+  nav
+    .grandfather
+    .main_list
+    .sub_parent
+    .sub_main_list:hover
+    .sub_main_top:hover
+    .icon,
+  nav
+    .grandfather
+    .main_list
+    .sub_parent
+    .sub_main_list:hover
+    .sub_main_top:hover
+    .main_links {
     color: #00ffff !important;
     font-weight: bold !important;
   }
@@ -363,7 +455,7 @@ nav .grandfather .main_list .sub_parent .sub_main_list:hover .sub_main_top:hover
     display: flex !important;
   }
   nav .grandfather .main_list .main_top:hover .main_links,
-nav .grandfather .main_list .main_top:hover .icon-plus {
+  nav .grandfather .main_list .main_top:hover .icon-plus {
     font-weight: bold !important;
     color: #00ffff !important;
   }
