@@ -1,0 +1,106 @@
+header {
+  // grand grand father
+  nav {
+    // grand father => first <ul>
+    .icon-plus {
+      display: none;
+    }
+    #show_icon {
+      display: none;
+    }
+    .grandfather {
+      @include d_flex(row);
+      margin-top: 30px;
+      // main <li>
+      .main_list {
+        position: relative;
+        padding-bottom: 30px;
+        // main Links <a>
+        .main_links {
+          font-size: $font_size;
+          padding: $paddMar - 10px $paddMar - 5px;
+          transition: $trans - 0.1s;
+          margin-right: $paddMar * 3;
+          cursor: pointer;
+        }
+
+        .main_links:hover {
+          color: $color_hover;
+          box-shadow: $main_box;
+        }
+
+        // sub parent <ul>
+        .sub_parent {
+          @extend .sub_list_items;
+          top: 48px;
+          left: -30px;
+          display: none;
+          animation: appear_slow 0.5s 1;
+
+          li {
+            padding: $paddMar - 5px 0;
+            border-bottom: 1px solid $color_black_dark;
+          }
+          a:hover,
+          span:hover {
+            color: $color_hover;
+            font-weight: bold;
+          }
+          .sub_main_list {
+            width: 160px;
+            cursor: pointer;
+            .sub_main_top {
+              .main_links {
+                font-weight: unset;
+                box-shadow: unset;
+                padding: 0;
+              }
+            }
+            .sub_main_top:hover {
+              .main_links {
+                color: $color_hover !important;
+              }
+            }
+            .sub_sub_parent {
+              @extend .sub_list_items;
+              left: 161px;
+              top: 104px;
+              display: none;
+              animation: appear_slow 0.5s 1;
+              li {
+                padding: $paddMar - 5px 0;
+                border-bottom: 1px solid $color_black_dark;
+              }
+              a:hover,
+              span:hover {
+                color: $color_hover;
+                font-weight: bold;
+              }
+            }
+          }
+          .sub_main_list:hover {
+            color: $color_hover;
+            font-weight: bold;
+            .sub_sub_parent {
+              display: flex;
+            }
+          }
+        }
+        .last {
+          left: -15px !important;
+        }
+      }
+
+      // main_list <li> hover
+      .main_list:hover {
+        cursor: pointer;
+        .main_links {
+          box-shadow: $main_box;
+        }
+        .sub_parent {
+          display: flex;
+        }
+      }
+    }
+  }
+}

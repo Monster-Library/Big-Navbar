@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+a,
+span {
+  cursor: pointer;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+nav {
+  @include d_flex(row, space-between);
+  background-color: $color_black;
+  color: $color_text;
+  height: 90px;
+  align-items: center !important;
+  padding: 0 10px;
+
+  li {
+    all: unset;
+  }
+  a {
+    text-decoration: none;
+    color: $color_text;
+  }
+}
+
+
+// this class for sub list to extend it
+.sub_list_items {
+  @include d_flex(column);
+  position: absolute;
+  background-color: $color_black;
+  border-radius: $b_radius;
+  padding: $paddMar - 10px;
+  width: $sub_links_width;
+  border-top: 1px solid $color_hover;
+  transition: $trans;
+
+  li {
+    padding: $paddMar - 5px 0;
+    border-bottom: 1px solid $color_black_dark;
+  }
+  a:hover,
+  span:hover {
+    color: $color_hover;
+    font-weight: bold;
+  }
+}

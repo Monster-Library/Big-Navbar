@@ -1,0 +1,7 @@
+@mixin d_flex($dir, $jc: "") {
+  display: flex;
+  flex-direction: $dir;
+  @if $jc != "" {
+    justify-content: $jc;
+  }
+}

@@ -1,0 +1,114 @@
+@media (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+  nav {
+    @include d_flex(row, space-between);
+    position: relative;
+    .icon-plus {
+      display: inline-block !important;
+    }
+    #show_icon {
+      display: block !important;
+      font-size: $font_size * 2;
+      margin: 0 20px;
+    }
+    // items parent
+    .grandfather {
+      display: flex !important;
+      flex-direction: column !important;
+      margin-top: 0 !important;
+      position: absolute;
+      top: 90px;
+      left: 0;
+      background-color: $color_black;
+      transition: 0.5s;
+      width: 100%;
+      transform: translateX(100%);
+      .main_links {
+        all: unset !important;
+      }
+
+      .main_list {
+        padding: 25px 10px;
+        cursor: pointer;
+        position: relative;
+        font-size: $font_size;
+        border-bottom: 1px solid $color_black_dark;
+
+        .icon-plus {
+          position: absolute;
+          right: 20px;
+        }
+
+        .sub_parent {
+          all: unset !important;
+          display: flex !important;
+          flex-direction: column !important;
+          margin-left: 20px !important;
+          display: none !important;
+          animation: move 0.5s 1 !important;
+          li {
+            border-bottom: unset !important;
+          }
+
+          a {
+            display: block;
+            padding: 15px 0 !important;
+          }
+
+          .sub_main_list {
+            width: 100% !important;
+            padding: 25px 0;
+            cursor: pointer;
+            position: relative;
+            font-size: $font_size;
+            .sub_sub_parent {
+              all: unset !important;
+              margin-left: 20px !important;
+              display: flex !important;
+              flex-direction: column !important;
+              display: none !important;
+              animation: move 0.5s 1 !important;
+
+              a {
+                padding-top: 25px !important;
+              }
+            }
+
+            .show {
+              display: flex !important;
+            }
+          }
+          .sub_main_list:hover {
+            color: unset !important;
+            font-weight: unset !important;
+            .sub_main_top:hover {
+              color: unset !important;
+              font-weight: unset !important;
+              .icon,
+              .main_links {
+                color: $color_hover !important;
+                font-weight: bold !important;
+              }
+            }
+          }
+        }
+        .show {
+          display: flex !important;
+        }
+
+        .main_top:hover {
+          .main_links,
+          .icon-plus {
+            font-weight: bold !important;
+            color: $color_hover !important;
+          }
+        }
+      }
+    }
+    .show {
+      transform: translateX(0);
+    }
+  }
+}
