@@ -6,6 +6,7 @@
     opacity: 1;
   }
 }
+
 @keyframes appear_slow {
   0% {
     opacity: 0;
@@ -14,28 +15,37 @@
     opacity: 1;
   }
 }
+
 @-webkit-keyframes move {
   0% {
-    transform: translateY(-20%);
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
   }
   50% {
-    transform: translateY(20%);
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
   }
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
+
 @keyframes move {
   0% {
-    transform: translateY(-20%);
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
   }
   50% {
-    transform: translateY(20%);
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
   }
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -48,52 +58,73 @@ span {
 }
 
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #1b1b1b;
   color: #fff;
   height: 90px;
-  align-items: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
   padding: 0 10px;
 }
+
 nav li {
   all: unset;
 }
+
 nav a {
   text-decoration: none;
   color: #fff;
 }
 
-.sub_list_items, header nav .grandfather .main_list .sub_parent .sub_main_list .sub_sub_parent, header nav .grandfather .main_list .sub_parent {
+.sub_list_items, header nav .grandfather .main_list .sub_parent, header nav .grandfather .main_list .sub_parent .sub_main_list .sub_sub_parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: absolute;
   background-color: #1b1b1b;
   border-radius: 5px;
   padding: 10px;
   width: 140px;
   border-top: 1px solid #00ffff;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.sub_list_items li, header nav .grandfather .main_list .sub_parent .sub_main_list .sub_sub_parent li, header nav .grandfather .main_list .sub_parent li {
+
+.sub_list_items li, header nav .grandfather .main_list .sub_parent li, header nav .grandfather .main_list .sub_parent .sub_main_list .sub_sub_parent li {
   padding: 15px 0;
   border-bottom: 1px solid #000;
 }
-.sub_list_items a:hover, header nav .grandfather .main_list .sub_parent .sub_main_list .sub_sub_parent a:hover, header nav .grandfather .main_list .sub_parent a:hover,
+
+.sub_list_items a:hover, header nav .grandfather .main_list .sub_parent a:hover, header nav .grandfather .main_list .sub_parent .sub_main_list .sub_sub_parent a:hover,
 .sub_list_items span:hover,
-header nav .grandfather .main_list .sub_parent .sub_main_list .sub_sub_parent span:hover,
-header nav .grandfather .main_list .sub_parent span:hover {
+header nav .grandfather .main_list .sub_parent span:hover,
+header nav .grandfather .main_list .sub_parent .sub_main_list .sub_sub_parent span:hover {
   color: #00ffff;
   font-weight: bold;
 }
@@ -101,29 +132,42 @@ header nav .grandfather .main_list .sub_parent span:hover {
 header nav .icon-plus {
   display: none;
 }
+
 header nav #show_icon {
   display: none;
 }
+
 header nav .grandfather {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-top: 30px;
 }
+
 header nav .grandfather .main_list {
   position: relative;
   padding-bottom: 30px;
 }
+
 header nav .grandfather .main_list .main_links {
   font-size: 20px;
   padding: 10px 15px;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
   margin-right: 60px;
   cursor: pointer;
 }
+
 header nav .grandfather .main_list .main_links:hover {
   color: #00ffff;
-  box-shadow: 0 0 5px #00ffff;
+  -webkit-box-shadow: 0 0 5px #00ffff;
+          box-shadow: 0 0 5px #00ffff;
 }
+
 header nav .grandfather .main_list .sub_parent {
   top: 48px;
   left: -30px;
@@ -131,27 +175,34 @@ header nav .grandfather .main_list .sub_parent {
   -webkit-animation: appear_slow 0.5s 1;
           animation: appear_slow 0.5s 1;
 }
+
 header nav .grandfather .main_list .sub_parent li {
   padding: 15px 0;
   border-bottom: 1px solid #000;
 }
+
 header nav .grandfather .main_list .sub_parent a:hover,
 header nav .grandfather .main_list .sub_parent span:hover {
   color: #00ffff;
   font-weight: bold;
 }
+
 header nav .grandfather .main_list .sub_parent .sub_main_list {
   width: 160px;
   cursor: pointer;
 }
+
 header nav .grandfather .main_list .sub_parent .sub_main_list .sub_main_top .main_links {
   font-weight: unset;
-  box-shadow: unset;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
   padding: 0;
 }
+
 header nav .grandfather .main_list .sub_parent .sub_main_list .sub_main_top:hover .main_links {
   color: #00ffff !important;
 }
+
 header nav .grandfather .main_list .sub_parent .sub_main_list .sub_sub_parent {
   left: 161px;
   top: 104px;
@@ -159,32 +210,45 @@ header nav .grandfather .main_list .sub_parent .sub_main_list .sub_sub_parent {
   -webkit-animation: appear_slow 0.5s 1;
           animation: appear_slow 0.5s 1;
 }
+
 header nav .grandfather .main_list .sub_parent .sub_main_list .sub_sub_parent li {
   padding: 15px 0;
   border-bottom: 1px solid #000;
 }
+
 header nav .grandfather .main_list .sub_parent .sub_main_list .sub_sub_parent a:hover,
 header nav .grandfather .main_list .sub_parent .sub_main_list .sub_sub_parent span:hover {
   color: #00ffff;
   font-weight: bold;
 }
+
 header nav .grandfather .main_list .sub_parent .sub_main_list:hover {
   color: #00ffff;
   font-weight: bold;
 }
+
 header nav .grandfather .main_list .sub_parent .sub_main_list:hover .sub_sub_parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 header nav .grandfather .main_list .last {
   left: -15px !important;
 }
+
 header nav .grandfather .main_list:hover {
   cursor: pointer;
 }
+
 header nav .grandfather .main_list:hover .main_links {
-  box-shadow: 0 0 5px #00ffff;
+  -webkit-box-shadow: 0 0 5px #00ffff;
+          box-shadow: 0 0 5px #00ffff;
 }
+
 header nav .grandfather .main_list:hover .sub_parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -192,11 +256,17 @@ header nav .grandfather .main_list:hover .sub_parent {
   body {
     overflow-x: hidden;
   }
-
   nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     position: relative;
   }
   nav .icon-plus {
@@ -208,16 +278,23 @@ header nav .grandfather .main_list:hover .sub_parent {
     margin: 0 20px;
   }
   nav .grandfather {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
-    flex-direction: column !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
     margin-top: 0 !important;
     position: absolute;
     top: 90px;
     left: 0;
     background-color: #1b1b1b;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
     width: 100%;
-    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
   nav .grandfather .main_links {
     all: unset !important;
@@ -235,8 +312,13 @@ header nav .grandfather .main_list:hover .sub_parent {
   }
   nav .grandfather .main_list .sub_parent {
     all: unset !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
-    flex-direction: column !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
     margin-left: 20px !important;
     display: none !important;
     -webkit-animation: move 0.5s 1 !important;
@@ -259,8 +341,13 @@ header nav .grandfather .main_list:hover .sub_parent {
   nav .grandfather .main_list .sub_parent .sub_main_list .sub_sub_parent {
     all: unset !important;
     margin-left: 20px !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
-    flex-direction: column !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
     display: none !important;
     -webkit-animation: move 0.5s 1 !important;
             animation: move 0.5s 1 !important;
@@ -269,6 +356,8 @@ header nav .grandfather .main_list:hover .sub_parent {
     padding-top: 25px !important;
   }
   nav .grandfather .main_list .sub_parent .sub_main_list .show {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
   }
   nav .grandfather .main_list .sub_parent .sub_main_list:hover {
@@ -280,19 +369,22 @@ header nav .grandfather .main_list:hover .sub_parent {
     font-weight: unset !important;
   }
   nav .grandfather .main_list .sub_parent .sub_main_list:hover .sub_main_top:hover .icon,
-nav .grandfather .main_list .sub_parent .sub_main_list:hover .sub_main_top:hover .main_links {
+  nav .grandfather .main_list .sub_parent .sub_main_list:hover .sub_main_top:hover .main_links {
     color: #00ffff !important;
     font-weight: bold !important;
   }
   nav .grandfather .main_list .show {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
   }
   nav .grandfather .main_list .main_top:hover .main_links,
-nav .grandfather .main_list .main_top:hover .icon-plus {
+  nav .grandfather .main_list .main_top:hover .icon-plus {
     font-weight: bold !important;
     color: #00ffff !important;
   }
   nav .show {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
-}/*# sourceMappingURL=navbar.css.map */
+}

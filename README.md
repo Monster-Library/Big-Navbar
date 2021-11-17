@@ -6,6 +6,7 @@
    now you can put the data just one time
 2. JavaScript codes shrinks to just 20 code
    <br/>
+
    <a href="https://imgbb.com/"><img src="https://i.ibb.co/F8VSyRn/ezgif-com-gif-maker.gif" alt="ezgif-com-gif-maker" border="0" /></a>
 
 ## The Links is
